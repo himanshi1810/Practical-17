@@ -1,5 +1,6 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Practical_17.Models;
+using Practical_17.ViewModels;
 
 namespace Practical_17.Data
 {
@@ -32,5 +33,8 @@ namespace Practical_17.Data
         public DbSet<Student> Students { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Role> Roles { get; set; }
+        public DbSet<Practical_17.ViewModels.StudentViewModel> StudentViewModel { get; set; } = default!;
+        public DbSet<Practical_17.ViewModels.CreateStudentViewModel> CreateStudentViewModel { get; set; } = default!;
+        public DbSet<Practical_17.ViewModels.EditStudentViewModel> EditStudentViewModel { get; set; } = default!;
     }
 }

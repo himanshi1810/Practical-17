@@ -25,7 +25,7 @@ namespace Practical_17.Services
 
             if (student != null)
             {
-                _context.Students.Update(student);
+                _context.Students.Remove(student);
                 await _context.SaveChangesAsync();
             }
         }

@@ -119,7 +119,8 @@ namespace Practical_17.Controllers
         // Fix for CS1503: Argument 1: cannot convert from 'method group' to 'int'
         [HttpPost]
         [ActionName("Delete")]
-        [ValidateAntiForgeryToken]
+        [ValidateAntiForgeryToken]
+
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var student = await _studentRepository.GetStudentAsync(id);
