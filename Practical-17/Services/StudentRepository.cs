@@ -45,10 +45,5 @@ namespace Practical_17.Services
              _context.Students.Update(student);
             await _context.SaveChangesAsync();
         }
-
-        internal Student GetStudentAsync(object value)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
